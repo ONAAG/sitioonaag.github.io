@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ONAAG S.A. de C.V. — Soluciones Industriales & Comerciales</title>
+  <meta name="description" content="ONAAG — Comercializadora en Querétaro. Tarimas, tornillería, papelería, maquinaria, empaque y servicios industriales. Contáctanos.">
+  <meta name="theme-color" content="#f97316">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" /> <!-- reemplaza por favicon real -->
+  <style>
+    :root{
+      --orange:#f97316;
+      --black:#1a1a1a;
+      --white:#ffffff;
+      --muted:#e5e7eb;
+      --max-width:1100px;
+      --radius:12px;
+      --fw-regular:400;
+      --fw-medium:500;
+      --fw-bold:700;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:var(--black);
+      background:linear-gradient(180deg, #fff 0%, #fbfbfb 100%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    .container{max-width:var(--max-width);margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit}
+    .logo{width:48px;height:36px;border-radius:8px;background:var(--black);display:grid;place-items:center;color:var(--orange);font-weight:700}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--black);text-decoration:none;font-weight:600}
+    .btn-ghost{border:1px solid var(--black);padding:8px 14px;border-radius:8px}
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:36px 0}
+    .hero-card{background:linear-gradient(135deg, rgba(250,250,250,0.9), rgba(255,255,255,0.8));border-radius:16px;padding:28px;box-shadow:0 6px 30px rgba(30,30,30,0.06)}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:12px 0 18px;color:#374151}
+    .cta{display:flex;gap:12px}
+    .btn-primary{background:var(--orange);color:var(--white);padding:12px 18px;border:none;border-radius:10px;font-weight:700;cursor:pointer}
+    .btn-secondary{background:transparent;color:var(--black);padding:12px 18px;border-radius:10px;border:2px solid var(--black);font-weight:700}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .feature{background:var(--white);padding:14px;border-radius:12px;border:1px solid #f3f4f6}
+
+    /* Services section */
+    section.services{padding:30px 0}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .service-card{background:linear-gradient(180deg,#11182708,#fff);padding:18px;border-radius:12px;border-left:6px solid var(--orange)}
+
+    /* Clients */
+    .clients{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+    .client-logo{width:120px;height:56px;border-radius:8px;background:#f8fafc;display:grid;place-items:center;border:1px solid #eef2f7}
+
+    /* Contact */
+    .contact{display:grid;grid-template-columns:1fr;gap:18px;padding:28px;background:var(--black);color:var(--white);border-radius:12px}
+    .contact form{display:grid;gap:10px}
+    .input,textarea{padding:10px;border-radius:8px;border:1px solid #ddd}
+    textarea{min-height:120px}
+
+    footer{padding:24px 0;color:#6b7280}
+
+    /* Responsive tweaks */
+    @media(min-width:900px){
+      .hero{grid-template-columns:1fr 420px}
+      h1{font-size:34px}
+    }
+    /* small niceties */
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--muted);font-weight:600}
+    .muted{color:#6b7280}
+    .small{font-size:13px}
+
+    /* Focus states */
+    .input:focus,textarea:focus{outline:3px solid rgba(249,115,22,0.14);border-color:var(--orange)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#">
+        <div class="logo">ONA</div>
+        <div>
+          <div style="font-weight:700">ONAAG S.A. de C.V.</div>
+          <div class="small muted">Soluciones industriales y comerciales — Querétaro</div>
+        </div>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn-ghost" href="#contacto">Solicitar cotización</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <span class="tag">Comercializadora · Logística · Servicios</span>
+          <h1>Proveemos insumos y servicios para la operación industrial y corporativa</h1>
+          <p class="lead">Tarimas tratadas, tornillería, papelería, maquinaria y servicios de facility — entrega rápida en la Zona Metropolitana de Querétaro. Confianza, cumplimiento y soluciones a la medida.</p>
+          <div class="cta">
+            <a class="btn-primary" href="#contacto">Contactar ahora</a>
+            <a class="btn-secondary" href="#servicios">Ver servicios</a>
+          </div>
+
+          <div class="features" style="margin-top:18px">
+            <div class="feature"><strong>Entrega local</strong><div class="small muted">24–72 hrs con inventario local</div></div>
+            <div class="feature"><strong>Contratos flexibles</strong><div class="small muted">Suministro recurrente y puntos de consignación</div></div>
+            <div class="feature"><strong>Calidad</strong><div class="small muted">Tarimas HT, tornillería certificada y control de calidad</div></div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div style="background:linear-gradient(180deg,#0f172a, #081126);color:var(--white);padding:18px;border-radius:12px">
+            <h3 style="margin:0 0 6px">Catálogo rápido</h3>
+            <ul class="small muted" style="margin:0 0 10px;padding-left:18px">
+              <li>Tarimas y huacales</li>
+              <li>Tornillería y accesorios</li>
+              <li>Papelería y cafetería</li>
+              <li>Embalaje y flejes</li>
+              <li>Servicios de limpieza y mantenimiento</li>
+            </ul>
+            <a class="btn-primary" href="#contacto">Solicitar catálogo (PDF)</a>
+          </div>
+
+          <div style="background:#fff;padding:16px;border-radius:12px;border:1px solid #f3f4f6">
+            <h4 style="margin:0 0 8px">¿Necesitas cotización urgente?</h4>
+            <div class="small muted">Escríbenos por WhatsApp o envía tu RFQ y te respondemos en menos de 24 horas.</div>
+            <div style="margin-top:12px"><a class="btn-secondary" href="https://wa.me/524421234567">WhatsApp: +52 442 147 2954</a></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="services">
+        <div class="container">
+          <h2>Servicios</h2>
+          <p class="muted">Soluciones integradas para industrias, centros de distribución y oficinas.</p>
+          <div class="services-grid" style="margin-top:14px">
+            <div class="service-card">
+              <h3>Tarimas y embalaje</h3>
+              <p class="small muted">Suministramos tarimas nuevas, recicladas y tratadas HT para exportación. Servicios de flejado y film stretch.</p>
+            </div>
+            <div class="service-card">
+              <h3>Tornillería y ferretería industrial</h3>
+              <p class="small muted">Kits MRO, suministro por caja o a consignación para líneas productivas.</p>
+            </div>
+            <div class="service-card">
+              <h3>Papelería & cafetería</h3>
+              <p class="small muted">Contratos de suministro para oficinas y comedores, vending y reposición.</p>
+            </div>
+            <div class="service-card">
+              <h3>Maquinaria y repuestos</h3>
+              <p class="small muted">Importación y distribución de maquinaria; servicio de instalación y mantenimiento.</p>
+            </div>
+            <div class="service-card">
+              <h3>Servicios MRO y outsourcing</h3>
+              <p class="small muted">Limpieza industrial, mantenimiento y subcontratación de servicios operativos.</p>
+            </div>
+            <div class="service-card">
+              <h3>Logística y transporte</h3>
+              <p class="small muted">Distribución local, transporte de maquinaria y coordinación de exportación.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="clientes" style="padding:28px 0">
+        <div class="container">
+          <h2>Algunos sectores  /  clientes</h2>
+          <p class="muted">Atendemos a plantas industriales, centros de distribución, talleres y empresas comerciales.</p>
+          <div class="clients" style="margin-top:14px">
+            <div class="client-logo">Aeronáutico</div>
+            <div class="client-logo">Automotriz</div>
+            <div class="client-logo">Gubernamental</div>
+            <div class="client-logo">Retail</div>
+            <div class="client-logo">Logistica</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" style="padding:28px 0">
+        <div class="container">
+          <h2>Contacto</h2>
+          <p class="muted">Solicita cotización o envía tu requerimiento. Respuesta en menos de 24 hrs (días hábiles).</p>
+          <div class="contact">
+            <div>
+              <strong>Oficina Principal</strong>
+              <div class="small muted">Zona Metropolitana de Querétaro, México</div>
+              <div style="margin-top:8px">✉️ maderanaranjoagrio@gmail.com</div>
+              <div>📞 +52 442 147 2954</div>
+              <div style="margin-top:8px" class="small muted">Horario de atención: Lunes a Sábado, 7:00–20:00</div>
+            </div>
+
+            <form action="https://formsubmit.co/contacto@onaag.com" method="POST">
+              <!-- Reemplaza el email en action por tu email real -->
+              <input class="input" type="text" name="Empresa" placeholder="Nombre de la empresa" required />
+              <input class="input" type="text" name="Contacto" placeholder="Nombre contacto" required />
+              <input class="input" type="email" name="Email" placeholder="Email" required />
+              <input class="input" type="tel" name="Telefono" placeholder="Teléfono / WhatsApp" required />
+              <textarea name="Mensaje" placeholder="Describe tu requerimiento (productos, cantidades, tiempo)" required></textarea>
+              <!-- Hidden fields for FormSubmit optional configuration -->
+              <input type="hidden" name="_subject" value="Nueva cotización desde web ONAAG" />
+              <input type="hidden" name="_template" value="table" />
+              <button class="btn-primary" type="submit">Enviar solicitud</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div class="small muted">© 2025 ONAAG S.A. de C.V. — Querétaro, México</div>
+        <div style="display:flex;gap:12px;align-items:center">
+          <a class="small muted" href="#">Política de privacidad</a>
+          <a class="small muted" href="#">Términos</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // JS mínimo: navegación suave
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        var target = document.querySelector(this.getAttribute('href'));
+        if(target){e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'});} 
+      });
+    });
+  </script>
+</body>
+</html>
